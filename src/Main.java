@@ -58,6 +58,6 @@ public class Main {
     }
 
     public static String createFile(File file) throws IOException {
-        return (file.createNewFile() ? "Файл создан! " + file : "Файл создана!") + "\n";
+        return (file.createNewFile() ? "Файл создан! " + file : "Файл создан!") + "\n";
     }
 }
