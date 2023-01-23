@@ -32,15 +32,18 @@ public class Main {
                     .append(createDir(gameDir));
         }
 
+        //Создание папок и логирование
         for(File dir: dirs){
             logger.append(createDir(dir));
         }
 
         try {
+            //Создание файлов и логирование
             for(File file : files){
                 logger.append(createFile(file));
             }
 
+            //Запись лога в файл
             FileWriter fileWriter = new FileWriter(gameDir + "\\temp\\temp.txt");
             fileWriter.append(logger);
             fileWriter.flush();
